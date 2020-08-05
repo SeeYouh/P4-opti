@@ -1,11 +1,20 @@
 <!doctype html>
-<html lang="Default">
+<html lang="fr">
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Si vous souhaitez avoir plus d'information sur notre entreprise de webdesign qui est basé à Lyon. Vous pouver nous contacter avec le formulaire.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	
+	<meta name="twitter:card" content="summary"/>
+	<meta name="twitter:site" content="@lachouetteagence"/>
+	<meta name="twitter:creator" content="@lachouetteagence"/>
+	<meta property="og:url" content="https://p4-opti.netlify.app/page2.html"/>
+	<meta property="og:title" content="La chouette agence,entreprise de webdesign, basé à Lyon, reste à votre écoute.">
+	<meta property="og:description" content="Si vous souhaitez avoir plus d'information sur notre entreprise de webdesign basé à Lyon. 
+											Vous pouver nous contacter avec se formulaire.">
+	<meta property="og:image" content="./img/la-chouette-agence.png">
+
     <link rel="shortcut icon" type="image/png" href="favicon.jpg">
-    
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
@@ -17,13 +26,20 @@
 	<script src="./js/blocs.min.js"></script>
 	<script src="./js/jqBootstrapValidation.js"></script>
 	<script src="./js/formHandler.js"></script>
-    <title>page2</title>
+
+    <title>La chouette agence reste à votre écoute.</title>
 
     
-<!-- Analytics -->
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+ <script async src="https://www.googletagmanager.com/gtag/js?id=UA-76490388-1"></script>
+ <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
  
-<!-- Analytics END -->
-    
+   gtag('config', 'UA-76490388-1');
+ </script>
+	 
 </head>
 <body>
 <!-- Principal conteneur -->
@@ -35,7 +51,7 @@
 		<nav class="navbar row">
 			<div class="navbar-header">
 				<a class="navbar-brand" href="index.html"><img src="img/la-chouette-agence.png" alt="Logo de La chouette agence, entreprise de web design basé à Lyon" height="40" /></a>
-				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+<!-- 				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
 					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 				</button>
 			</div>
@@ -48,6 +64,7 @@
 						<a href="page2.html">page2 &gt;</a>
 					</li>
 				</ul>
+-->
 			</div>
 		</nav>
 	</div>
@@ -77,30 +94,26 @@
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-6">
-				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
-					<div class="form-group">
-						<label>
-							Nom
-						</label>
-						<input id="name" class="form-control" required />
+				<form novalidate success-msg="Votre message à bien été envoyé" fail-msg="Désolé, il semble que notre serveur de messagerie ne répond pas, Désolé pour le désagrément !">
+					<div class="formulaire">
+						<div class="form-group">
+							<label for="name">Nom</label>
+							<input type=texte name="name" id="name" class="form-control" placeholder="Ex: Robert" required />
+						</div>
+						<div class="form-group">
+							<label for="email">Adresse email</label>
+							<input name="email" id="email" class="form-control" type="email" placeholder="Ex: email@domaine.com" required />
+						</div>
+						<div class="form-group">
+							<label for="comment">Comment nous avez-vous connu ?</label>
+							<input name="comment" class="form-control" type="texte" placeholder="Ex: Google" required id="input_504" />
+						</div>
+						<div class="form-group">
+							<label>
+								Brief de votre projet<br>
+							</label><textarea id="message" class="form-control" rows="4" cols="50" placeholder="Ajoutez autant de détails que nécessaire" required></textarea>
+						</div> 
 					</div>
-					<div class="form-group">
-						<label>
-							Adresse email
-						</label>
-						<input id="email" class="form-control" type="email" required />
-					</div>
-					<div class="form-group">
-						<label>
-							Comment nous avez-vous connu ?
-						</label>
-						<input class="form-control" type="email" required id="input_504" />
-					</div>
-					<div class="form-group">
-						<label>
-							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
-					</div> 
 					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
 						Envoyer
 					</button>
