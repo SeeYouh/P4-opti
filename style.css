@@ -672,10 +672,6 @@ a {
     font-size: 36px;
 }
 
-.text-size {
-    font-size: 16px;
-}
-
 .statement-bloc-text {
     line-height: 26px;
     font-style: italic;
@@ -687,7 +683,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .tight-width-whitespace {
