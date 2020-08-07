@@ -56,7 +56,7 @@ a:hover {
     padding: 20px 50px;
 }
 
-/* .bg-center,
+.bg-center,
 .bg-l-edge,
 .bg-r-edge,
 .bg-t-edge,
@@ -71,7 +71,7 @@ a:hover {
     -o-background-size: auto!important;
     background-size: auto!important;
 }
- */
+
 .bg-repeat {
     background: repeat;
 }
@@ -665,11 +665,15 @@ a {
 }
 
 .hero-bloc-text {
-    font-size: 38px;
+    font-size: 50px;
 }
 
 .hero-bloc-text-sub {
     font-size: 36px;
+}
+
+.text-size {
+    font-size: 16px;
 }
 
 .statement-bloc-text {
@@ -781,7 +785,7 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #f8d7ba!important;
 }
 
 .btn-atomic-tangerine {
