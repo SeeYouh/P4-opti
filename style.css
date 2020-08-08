@@ -539,7 +539,7 @@ h4 {
     overflow-x: hidden;
     position: relative;
   }
-  .bloc {
+   .bloc {
     padding-left: constant(safe-area-inset-left);
     padding-right: constant(safe-area-inset-right);
   }
